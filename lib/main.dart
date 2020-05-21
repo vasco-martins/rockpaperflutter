@@ -26,7 +26,7 @@ class _CoreScreenState extends State<CoreScreen> {
       create: (_) => userMob,
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        initialRoute: 'createroom',
+        initialRoute: 'middlewares/auth',
         onGenerateRoute: FluroRouter.router.generator,
         theme: gameThemeLight(),
       ),

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:rockpaper/mobs/user_mob.dart';
 import 'package:rockpaper/routes.dart';
+import 'package:rockpaper/theme.dart';
 
 void main() {
   FluroRouter.setupRouter();
@@ -25,8 +26,9 @@ class _CoreScreenState extends State<CoreScreen> {
       create: (_) => userMob,
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        initialRoute: 'middlewares/auth',
+        initialRoute: 'createroom',
         onGenerateRoute: FluroRouter.router.generator,
+        theme: gameThemeLight(),
       ),
     );
   }

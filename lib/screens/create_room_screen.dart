@@ -11,7 +11,9 @@ class _CreateRoomScreenState extends State<CreateRoomScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.orange.shade800,
+
+      backgroundColor: Theme.of(context).primaryColor,
+ 
       appBar: AppBar(
         title: Text("CRIAR SALA"),
         elevation: 0,

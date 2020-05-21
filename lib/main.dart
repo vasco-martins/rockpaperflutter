@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:rockpaper/mobs/user_mob.dart';
 import 'package:rockpaper/routes.dart';
+import 'package:rockpaper/theme.dart';
 
 void main() {
   FluroRouter.setupRouter();
@@ -27,6 +28,7 @@ class _CoreScreenState extends State<CoreScreen> {
         debugShowCheckedModeBanner: false,
         initialRoute: 'middlewares/auth',
         onGenerateRoute: FluroRouter.router.generator,
+        theme: gameThemeLight(),
       ),
     );
   }

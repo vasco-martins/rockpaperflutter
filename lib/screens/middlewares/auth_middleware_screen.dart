@@ -33,6 +33,11 @@ class _AuthMiddlewareScreenState extends State<AuthMiddlewareScreen> {
 
           return CreateRoomScreen();
         }
+        return Scaffold(
+          body: Center(
+            child: CircularProgressIndicator(),
+          ),
+        );
       },
     );
   }
